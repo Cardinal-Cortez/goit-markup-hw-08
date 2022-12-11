@@ -1,0 +1,39 @@
+.section.pictures
+{
+    padding-top: 0;
+}
+.section
+{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.pictures-list
+{
+    @include flexCenter(flex,null,null);
+    gap: 30px;
+}
+.item-pictures
+{
+    flex-basis: calc((100% - 30px) / 2);
+}
+.pictures-top-wrap
+{
+    position: relative;
+}
+.pictures-bottom-text
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(47, 48, 58, 0.8);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 27px;
+    width: 100%;
+}

@@ -1,0 +1,191 @@
+.backdrop
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: opacity 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms 
+    cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal
+{
+    width: 528px;
+    min-height: 581px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    padding: 40px;    
+    
+}
+    .modal-titel
+    {
+        font-weight: 700;
+        font-size: 20px;
+        line-height:calc(23 / 20);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color:var(--color-black);
+        margin-bottom: 12px;
+    
+    }
+    .modal-close
+    {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .modal-field
+    {
+        margin-bottom: 10px;
+    } 
+.modal-input
+    {
+        width: 100%;
+        height: 45px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        background-color: transparent;
+        outline: transparent;
+        padding-left: 42px;
+        transition: border 250ms 
+        cubic-bezier(0.4, 0, 0.2, 1);
+        font-size: 12px;
+        &:hover, &:focus
+        {
+            border: 1px solid var(--color-c6);
+            transition: fill 250ms 
+            cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &:hover, &:focus
+        {
+            border: 1px solid var(--color-c6);
+            transition: fill 250ms 
+            cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    }
+    
+.modal-comment
+    {
+        outline: transparent;
+        width: 100%;
+        height: 120px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        resize: none;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        @extend %comment;
+        padding: 12px 16px;
+        margin-bottom: 20px;
+        transition: border 250ms 
+        cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus
+        {
+            border: 1px solid var(--color-c6);
+        }
+    } 
+    
+
+.modal-icon
+    {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        transform: translateY(-50%);
+        .modal-input:hover + &, 
+        .modal-input:focus + &
+        {
+            fill: var(--color-c6);
+        }
+    }
+    
+ .modal-btn
+{
+    padding: 10px 52px;
+}        
+.button-x
+{
+    fill: var(--color-black);
+        &:hover, &:focus
+    {
+       fill: var(--color-c6);
+    }
+}
+
+.is-hidden
+{
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.input-wrapper
+{
+    position: relative;
+}
+.input-label
+    {
+        display: block;
+        position: relative;
+        margin-bottom: 4px;
+        @extend %comment;
+        color: #757575;
+    }
+
+.policy
+{
+    @extend %policy;
+    color: #757575;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin-bottom: 30px;
+    &::before
+    {
+        content: '';
+        width: 16px;
+        height: 15px;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 2px;
+        /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+    }
+    .modal-check:hover + &::before,
+    .modal-check:focus + &::before 
+    {
+        border-color: var(--color-blue); 
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .modal-check:checked + &::before
+    {
+        background-color: var(--color-c6);
+        border: none;
+        background-image: url(../images/кнопка/Vector.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+.policy-link
+    {
+        @extend %policy;
+        color: #2196F3;
+    }

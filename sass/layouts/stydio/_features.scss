@@ -1,0 +1,36 @@
+.features
+{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-list
+{
+    @include flexCenter(flex,null,null);
+    gap: 30px;
+}
+.item__features
+{
+    flex-basis: calc((100% - 90px) / 4);
+}
+.features__icon
+{
+    height: 120px;
+    @include flexCenter();
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+}
+.feature__title 
+{
+    margin-bottom: 10px;
+    @extend %header;
+    text-transform: uppercase;
+    color: var(--color-black)      
+}
+.feature__subtitle 
+{
+    @extend %policy;
+    color: var(--color-gray)
+}
+

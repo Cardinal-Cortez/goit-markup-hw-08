@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>goit-markup-hw-07-portfolio</title>
+</head>
+<body class="body">
+    <header class="header">
+        <div class="conteiner header--conteiner">
+            <a href="https://cardinal-cortez.github.io/goit-markup-hw-07/" class="logo header__logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+            <nav class="navigation">
+                <ul class="nav">
+                    <li class="nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-07/" class="nav__link">Студія</a></li>
+                    <li class="nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-07/portfolio.html" class="nav__link nav__link--current">Портфоліо</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
+                </ul>
+            </nav>        
+                <ul class="contacts">
+                    <li class="contacts__link"><a href="mailto:info@devstudio.com" class="contacts__core contacts__core--write">       
+                        <svg class="contacts__icon" width="16" height="12">
+                        <use href="./images/icons.svg#icon-envelopehover" class="contacts__link"></use>
+                        </svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__link"><a href="tel:++380961111111" class="contacts__core contacts__core--write">
+                        <svg class="contacts__icon" width="10" height="16">
+                        <use href="./images/icons.svg#icon-smartphone" class="contacts__link"></use>
+                        </svg>+38 096 111 11 11</a>
+                    </li>
+                </ul>                      
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="conteiner">
+                <h2 class="visually-hidden">Портфоліо</h2>
+                <ul class="conteiner-menu">
+                    <li class="item-menu"><button class="portfolio-btn" type="button">Усі</button></li>
+                    <li><button class="portfolio-btn" type="button">Веб-сайти</button></li>
+                    <li><button class="portfolio-btn" type="button">Додатки</button></li>
+                    <li><button class="portfolio-btn" type="button">Дизайн</button></li>
+                    <li><button class="portfolio-btn" type="button">Маркетинг</button></li>
+                </ul>
+            </div>
+           <div class="conteiner">
+                <ul class="conteiner-portfolio">                    
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/технокряк1.jpg" alt="ноутбук" width="370px";>
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt culpa sit, cumque neque perspiciatis et.</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title">Технокряк</h3>
+                                    <p class="portfolio-subtitle">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>     
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПостерNewOrleavsGoldenStar1.jpg" alt="два гравці в баскетбол" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel illo in vitae.</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title">Постер <span lang="en">New Orlean vs Golden Star</span></h3>
+                                    <p class="portfolio-subtitle">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>                  
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/РесторанSeafood1.jpg" alt="лого ресторану з рибою" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, qui!</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h3>
+                                    <p class="portfolio-subtitle">Додаток</p>
+                                </div>
+                            </a>
+                        </li>                 
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПроєктPrime1.jpg" alt="навушники" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi corrupti numquam necessitatibus sint quibusdam autem quae alias eveniet fugiat sapiente.</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title">Проєкт <span lang="en">Prime</span></h3>
+                                    <p class="portfolio-subtitle">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>                    
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПроєктBoxes1.jpg" alt="коробки" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium nihil culpa earum, alias ipsa voluptatibus voluptas eos quam voluptate.</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h3>
+                                    <p class="portfolio-subtitle">Додаток</p>
+                                </div>
+                            </a>
+                        </li>                    
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/InspirationhasnoBorders1.jpg" alt="екран монітора" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolorem non vero hic eos architecto assumenda ducimus earum officiis minus.</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title" lang="en">Inspiration has no Borders</h3>
+                                    <p class="portfolio-subtitle">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>                   
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ВиданняLimitedEdition1.jpg" alt="розгорнута книжка" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore hic maiores enim nihil corporis ducimus tenetur provident rem eveniet aspernatur.</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h3>
+                                    <p class="portfolio-subtitle">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>                
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПроєктLAB1.jpg" alt="бірка" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, asperiores similique ullam eaque magni maiores?</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title">Проєкт <span lang="en">LAB</span></h3>
+                                    <p class="portfolio-subtitle">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>                    
+                        <li class="conteiner-portfolio-li">
+                            <a href="#" class="item-portfolio">
+                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/GrowingBusiness1.jpg" alt="друкує на ноутбуці" width="370px">
+                                    <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consectetur!</p>
+                                </div>
+                                <div class="border-portfolio">
+                                    <h3 class="portfolio-title" lang="en">Growing Business</h3>
+                                    <p class="portfolio-subtitle">Додаток</p>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+                </ul>
+           </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="conteiner footer-container">
+            <div class="address">
+                <a href="https://cardinal-cortez.github.io/goit-markup-hw-07/" class="logo logo__footer"><span class="logo__web">Web</span><span class="footer__studio logo__studio">Studio</span></a>
+                <address>
+                        <ul class="list-footer">
+                            <li class="list-block"><a href="https://goo.gl/maps/taaaHP7BocLZiyMx6" target="_blank" rel="noopener noreferrer" class="footer-address">м. Київ, пр-т Лесі Українки, 26</a></li>
+                            <li class="list-block"><a href="mailto:info@devstudio.com" class="footer-contacts">info@devstudio.com</a></li>
+                            <li class="list-block"><a href="tel:++380961111111" class="footer-contacts">+38 096 111 11 11</a></li>
+                        </ul>
+            </div>   
+            </address>
+            <div class="just">
+                <p class="doit">приєднуйтесь</p>
+                <ul class="doit-list">
+                    <li class="doit-soc-item"><a href="#" class="doit-soc-link" target="_blank">
+                        <svg class="doit-soc-icons" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use></svg>
+                        </a></li>
+                    <li class="doit-soc-item"><a href="#" class="doit-soc-link" target="_blank">
+                        <svg class="doit-soc-icons" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use></svg>
+                        </a></li>
+                    <li class="doit-soc-item"><a href="#" class="doit-soc-link" target="_blank">
+                        <svg class="doit-soc-icons" width="20" height="20"><use href="./images/icons.svg#icon-facebook"></use>
+                        </svg>
+                        </a></li>
+                    <li class="doit-soc-item"><a href="#" class="doit-soc-link" target="_blank">
+                        <svg class="doit-soc-icons" width="20" height="20">
+                            <use href="./images/icons.svg#icon-linkedin"></use></svg>
+                        </a></li>                 
+                </ul>
+            </div>
+            <div>
+                <p class="doit">Підпишіться на розсилку</p>
+                    <label for="user-email-footer" class="input-label"></label>
+                    <div class="footer-subscribe">
+                        <input type="email" name="user-email-footer" 
+                        class="footer-input" id="user-email-footer"
+                        placeholder="E-mail" required/>
+                        <div class="footer-submit">
+                            <button type="submit" class="footer-btn">Підписатися</button>
+                            <svg class="footer-icon" width="24" hight="24">
+                                <use href="./images/кнопка/icomoonsend/symbol-defs.svg#icon-iconsend"></use>
+                            </svg>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
