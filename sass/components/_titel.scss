@@ -1,9 +1,19 @@
 .titel
 {
-    margin-bottom: 50px;
-    font-size: 36px;
-    line-height: calc(42/36);
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 33px;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--color-black)
+    color: var(--color-black);
+    
+
+    @media screen and (min-width: 1200px) 
+    {
+        margin-bottom: 50px;
+        font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;
+    }
 }

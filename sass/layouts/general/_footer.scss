@@ -3,20 +3,14 @@
     padding-top: 60px;
     padding-bottom: 56px;
     background: var(--color-backgroung);
-    
-    &-container
+}
+.footer-subscribe
     {
         display: flex;
-        gap: 70px;
-        align-items: baseline;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
     }
-    & a
-    {
-        text-decoration: none;
-    }
-
-    &-input
+.footer-input
     {
         width: 358px;
         height: 50px;
@@ -28,12 +22,21 @@
         outline: transparent;
         color: rgba(255, 255, 255, 0.6);
     }
-    &-subscribe
+.footer-container
+{
+    @include flexCenter(flex,space-between,baseline);
+    flex-wrap: wrap;
+    gap: 60px;
+    @media screen and (min-width: 1200px) 
     {
-        display: flex;
-        gap: 12px;
+        @include flexCenter(flex,space-between,baseline);
+        gap: 70px;
     }
 }
+footer a
+    {
+        text-decoration: none;
+    }
 .footer-contacts
     {
         @extend %policy;
@@ -66,10 +69,8 @@
         width: 200px;
         height: 50px;
         gap: 10px;
-        display: flex;
-        align-items: center;
+        @include flexCenter();
         text-align: center;
-        justify-content: center;
         border: none;
         border-radius: 4px;
         background: var(--color-blue);

@@ -1,17 +1,20 @@
-.features
-{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .features-list
 {
     @include flexCenter(flex,null,null);
+    flex-wrap: wrap;
     gap: 30px;
 }
 .item__features
 {
-    flex-basis: calc((100% - 90px) / 4);
+    width: 100%;
+    @media screen and (min-width: 768px) 
+    {
+        flex-basis: calc((100% - 30px) / 2);    
+    }
+    @media screen and (min-width: 1200px) 
+    {
+        flex-basis: calc((100% - 90px) / 4);    
+    }
 }
 .features__icon
 {
@@ -23,10 +26,15 @@
 }
 .feature__title 
 {
+    text-align: center;
     margin-bottom: 10px;
     @extend %header;
     text-transform: uppercase;
-    color: var(--color-black)      
+    color: var(--color-black);
+    @media screen and (min-width: 768px) 
+    {
+        text-align: left;    
+    }      
 }
 .feature__subtitle 
 {
