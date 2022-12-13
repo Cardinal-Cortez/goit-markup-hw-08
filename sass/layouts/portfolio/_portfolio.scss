@@ -1,5 +1,19 @@
 .conteiner-menu 
 {
+    @media screen and (min-width: 480px) 
+    {
+        margin-bottom: 50px;
+        @include flexCenter(flex,normal,null);
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-right: 124px;
+    }
+    @media screen and (min-width: 1200px) 
+    {
+        margin-bottom: 50px;
+        @include flexCenter(flex,center,null);
+        gap: 8px;
+    }
     margin-bottom: 50px;
     @include flexCenter(flex,center,null);
     gap: 8px;
@@ -42,9 +56,19 @@
 
 .conteiner-portfolio
 {
-    @include flexCenter(flex,center,null);
-    flex-wrap: wrap;
-    gap: 30px;
+    @media screen and (min-width: 480px) 
+    {
+        @include flexCenter(flex,center,null);
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    @media screen and (min-width: 1200px) 
+    {
+        @include flexCenter(flex,center,null);
+        flex-wrap: wrap;
+        gap: 30px;  
+    }
+    
 }
 .conteiner-portfolio-li
 {
