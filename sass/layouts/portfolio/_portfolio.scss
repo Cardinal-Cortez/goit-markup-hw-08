@@ -8,15 +8,17 @@
         gap: 8px;
         margin-right: 124px;
     }
+    @media screen and (min-width: 768px) 
+    {
+        margin-right: 0px;
+        justify-content: center; 
+    }
     @media screen and (min-width: 1200px) 
     {
         margin-bottom: 50px;
         @include flexCenter(flex,center,null);
         gap: 8px;
     }
-    margin-bottom: 50px;
-    @include flexCenter(flex,center,null);
-    gap: 8px;
 }
 
 .portfolio-btn 
@@ -62,6 +64,11 @@
         flex-wrap: wrap;
         gap: 30px;
     }
+    @media screen and (min-width: 480px) 
+    {
+        justify-content: start;
+    }
+
     @media screen and (min-width: 1200px) 
     {
         @include flexCenter(flex,center,null);
@@ -72,7 +79,18 @@
 }
 .conteiner-portfolio-li
 {
-    flex-basis: calc((100% - 60px) / 3);
+    @media screen and (min-width: 480px) 
+    {
+        width: 100%;
+    }
+    @media screen and (min-width: 768px) 
+    {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) 
+    {
+        flex-basis: calc((100% - 60px) / 3);
+    }
 }
 
 .item-portfolio
