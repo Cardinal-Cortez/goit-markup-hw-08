@@ -20,12 +20,12 @@
         {}
       ],
       "properties": {
-        "order": 10,
+        "order": 12,
         "id": 0,
         "name": "menu_40px",
         "prevSize": 32
       },
-      "setIdx": 0,
+      "setIdx": 1,
       "setId": 2,
       "iconIdx": 0
     }
