@@ -39,9 +39,11 @@ body {
   color: white;
 }
 
-.section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 480px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section {
@@ -356,6 +358,7 @@ img {
     gap: 50px;
   }
 }
+
 .contacts__link {
   padding-bottom: 10px;
 }
@@ -394,12 +397,6 @@ img {
   }
 }
 
-.contacts {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
 @media screen and (min-width: 480px) {
   .contacts {
     display: none;
@@ -578,8 +575,14 @@ img {
   color: var(--color-gray);
 }
 
-@media screen and (min-width: 1200) {
-  .section.pictures {
+@media screen and (min-width: 480px) {
+  .pictures.section {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures.section {
+    display: block;
     padding-top: 0;
   }
 }

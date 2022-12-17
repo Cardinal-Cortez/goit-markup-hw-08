@@ -44,12 +44,7 @@
     {
         @include flexCenter(flex,space-between,null);
         gap: 50px; 
-    }
-    @media screen and (min-width: 1200px) 
-    {
-        
-    }
-    
+    }        
 }
 .contacts__link
 {
@@ -123,10 +118,7 @@
         margin-left: auto;
         @include flexCenter(flex,null,center);
         gap: 30px;
-    }
-    margin-left: auto;
-    @include flexCenter(flex,null,center);
-    gap: 30px;
+    }    
 }
 
 .contacts__core
