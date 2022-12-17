@@ -59,6 +59,10 @@ img {
   width: 100%;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .input-label, .modal-comment {
   font-style: normal;
   font-weight: 400;

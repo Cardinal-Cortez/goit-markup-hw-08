@@ -35,38 +35,42 @@
                         </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>
-            <button type="button" class="menu-open">
-                <svg class="menu-button" width="40" height="40">
-                    <use href="./images/кнопка/40px/symbol-defs.svg#icon-menu_40px"></use>
-                </svg>
-            </button>                      
-        </div>
-        <div class="mob-menu">
-            <div class="mob-conteiner">
-                <button type="button" class="menu-close">
-                    <svg class="button-x-menu" width="18" height="18">
-                        <use href="./images/кнопка/button_x.svg#icon-x"></use>
+                <button type="button" class="menu-open" data-menu-open>
+                    <svg class="menu-button" width="40" height="40">
+                        <use href="./images/кнопка/40px/symbol-defs.svg#icon-menu_40px"></use>
                     </svg>
-                </button>
-                <ul class="menu-nav">
-                    <li class="menu-nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-08/" class="menu-nav__link">Студія</a></li>
-                    <li class="menu-nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-08/portfolio.html" class="menu-nav__link">Портфоліо</a></li>
-                    <li class="menu-nav__item"><a href="#" class="menu-nav__link">Контакти</a></li>
-                </ul>
-                <ul class="mob-contacts">
-                    <li><a href="tel:++380961111111"
-                        class="mob-contacts__link">+38 096 111 11 11</a>
-                    </li>
-                    <li><a href="mailto:info@devstudio.com" 
-                        class="mob-contacts__link">info@devstudio.com</a>
-                    </li>             
-                </ul>
-                <ul class="mob-soc">
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">Instagram</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">Twitter</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">Facebook</a></li>
-                    <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">LinkedIn</a></li>
-                </ul>
+                </button>                      
+            </div>
+            <div class="mob-menu is-hidden" data-menu>
+                <div class="mob-conteiner">
+                    <div class="mob-menu-top">
+                    <button type="button" class="menu-close" data-menu-close>
+                        <svg class="button-x-menu" width="18" height="18">
+                            <use href="./images/кнопка/button_x.svg#icon-x"></use>
+                        </svg>
+                    </button>
+                    <ul class="menu-nav">
+                        <li class="menu-nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-08/" class="menu-nav__link">Студія</a></li>
+                        <li class="menu-nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-08/portfolio.html" class="menu-nav__link">Портфоліо</a></li>
+                        <li class="menu-nav__item"><a href="#" class="menu-nav__link">Контакти</a></li>
+                    </ul>        
+                </div>
+                <div class="mob-menu-bottom">
+                    <ul class="mob-contacts">
+                        <li><a href="tel:++380961111111"
+                            class="mob-contacts__link">+38 096 111 11 11</a>
+                        </li>
+                        <li><a href="mailto:info@devstudio.com" 
+                            class="mob-contacts__link">info@devstudio.com</a>
+                        </li>             
+                    </ul>
+                    <ul class="mob-soc">
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">Instagram</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">Twitter</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">Facebook</a></li>
+                        <li><a href="#" target="_blank" rel="noopener noreferrer" class="mob-soc-link" lang="en">LinkedIn</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -473,5 +477,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
