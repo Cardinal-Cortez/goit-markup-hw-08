@@ -463,25 +463,38 @@ img {
   width: 100vw;
   height: 100vh;
   background-color: #fff;
-  padding-top: 10px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+}
+.mob-menu > .mob-conteiner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .mob-conteiner {
+  padding-top: 10px;
+  padding-bottom: 48px;
+  padding-left: 40px;
   width: 100%;
   margin: 0 auto;
   outline: 2px solid red;
+  padding-right: 15px;
 }
 @media screen and (min-width: 480px) {
   .mob-conteiner {
-    max-width: 767px;
+    max-width: 480px;
   }
 }
 
 .menu-close {
   display: block;
   margin-left: auto;
+  background-color: #fff;
+  border: none;
+}
+
+.menu-close:hover, .menu-close:hover {
+  fill: var(--color-blue);
 }
 
 .menu-nav {
@@ -498,12 +511,7 @@ img {
   color: var(--color-black);
 }
 
-.menu-nav__link--current {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  text-align: center;
-  letter-spacing: 0.02em;
+.menu-nav__link:hover, .menu-nav__link:focus {
   color: var(--color-blue);
 }
 
@@ -522,20 +530,20 @@ img {
   flex-direction: column;
 }
 
-.mob-contacts-tel {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1764705882;
-  letter-spacing: 0.02em;
-  color: #2196F3;
-}
-
-.mob-contacts-mail {
+.mob-contacts__link {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.1666666667;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.mob-contacts__link:hover, .mob-contacts__link:focus {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.1764705882;
+  letter-spacing: 0.02em;
+  color: #2196F3;
 }
 
 .mob-soc {
@@ -551,24 +559,14 @@ img {
   top: 11px;
   width: 22px;
   height: 1px;
-  background-color: solid rgba(33, 33, 33, 0.2);
+  background-color: #F5F5F5;
   border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
-}
-
-.mob-soc-link::after:not(:last-child) {
-  content: "";
-  position: absolute;
-  top: 11px;
-  width: 22px;
-  height: 1px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  transform: rotate(90deg);
 }
 
 .mob-soc-link {
   position: relative;
-  padding-right: 10px;
+  display: flex;
+  gap: 20px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.2222222222;
