@@ -344,10 +344,23 @@ img {
   color: var(--color-black);
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  gap: 50px;
+@media screen and (min-width: 480px) {
+  .nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+}
+.contacts__link {
+  padding-bottom: 10px;
+}
+.contacts__link .nav__link:last-child {
+  margin-bottom: 0px;
 }
 
 .nav__link {
@@ -359,19 +372,26 @@ img {
   color: var(--color-blue);
 }
 
-.nav__link--current {
-  color: var(--color-blue);
+@media screen and (min-width: 768px) {
+  .nav__link--current {
+    color: var(--color-blue);
+  }
+  .nav__link--current::after {
+    display: block;
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    content: "";
+    background-color: var(--color-blue);
+    border-radius: 2px;
+  }
 }
-.nav__link--current::after {
-  display: block;
-  position: absolute;
-  bottom: -33px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  content: "";
-  background-color: var(--color-blue);
-  border-radius: 2px;
+@media screen and (min-width: 1200px) {
+  .nav__link--current::after {
+    bottom: -41px;
+  }
 }
 
 .contacts {
@@ -379,6 +399,26 @@ img {
   display: flex;
   align-items: center;
   gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-top: 21px;
+    margin-left: auto;
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
 }
 
 .contacts__core {
@@ -393,12 +433,12 @@ img {
   fill: currentColor;
 }
 
-.contacts__write {
+.write {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.contacts__write:hover {
+.write:hover {
   fill: currentColor;
 }
 
@@ -538,9 +578,12 @@ img {
   color: var(--color-gray);
 }
 
-.section.pictures {
-  padding-top: 0;
+@media screen and (min-width: 1200) {
+  .section.pictures {
+    padding-top: 0;
+  }
 }
+
 .pictures-list {
   display: flex;
   gap: 30px;

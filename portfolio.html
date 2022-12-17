@@ -10,33 +10,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/main.css">
-    <title>goit-markup-hw-07-portfolio</title>
+    <title>goit-markup-hw-08-portfolio</title>
 </head>
 <body class="body">
-    <!-- <header class="header">
+    <header class="header">
         <div class="conteiner header--conteiner">
-            <a href="https://cardinal-cortez.github.io/goit-markup-hw-07/" class="logo header__logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
+            <a href="https://cardinal-cortez.github.io/goit-markup-hw-08/" class="logo header__logo"><span class="logo__web">Web</span><span class="logo__studio">Studio</span></a>
             <nav class="navigation">
                 <ul class="nav">
-                    <li class="nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-07/" class="nav__link">Студія</a></li>
-                    <li class="nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-07/portfolio.html" class="nav__link nav__link--current">Портфоліо</a></li>
+                    <li class="nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-08/" class="nav__link">Студія</a></li>
+                    <li class="nav__item"><a href="https://cardinal-cortez.github.io/goit-markup-hw-08/portfolio.html" class="nav__link nav__link--current">Портфоліо</a></li>
                     <li class="nav__item"><a href="#" class="nav__link">Контакти</a></li>
                 </ul>
             </nav>        
                 <ul class="contacts">
-                    <li class="contacts__link"><a href="mailto:info@devstudio.com" class="contacts__core contacts__core--write">       
+                    <li class="contacts__link"><a href="mailto:info@devstudio.com" class="write contacts__core--write contacts__core">       
                         <svg class="contacts__icon" width="16" height="12">
-                        <use href="./images/icons.svg#icon-envelopehover" class="contacts__link"></use>
+                        <use href="./images/icons.svg#icon-envelopehover"></use>
                         </svg>info@devstudio.com</a>
                     </li>
-                    <li class="contacts__link"><a href="tel:++380961111111" class="contacts__core contacts__core--write">
+                    <li class="contacts__link"><a href="tel:++380961111111" class="write contacts__core--write contacts__core">
                         <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/icons.svg#icon-smartphone" class="contacts__link"></use>
+                        <use href="./images/icons.svg#icon-smartphone"></use>
                         </svg>+38 096 111 11 11</a>
                     </li>
                 </ul>                      
         </div>
-    </header> -->
+    </header>
     <main>
         <section class="section">
             <div class="conteiner">
@@ -53,7 +53,17 @@
                 <ul class="conteiner-portfolio">                    
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/технокряк1.jpg" alt="ноутбук" width="370px";>
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/технокряк1des.jpg 1x, ./images/портфоліо/технокряк1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/технокряк1tab.jpg 1x, ./images/портфоліо/технокряк1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/технокряк1mob.jpg 1x, ./images/портфоліо/технокряк1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/технокряк1mob.jpg" alt="ноутбук" width="450">
+                                    </picture>
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt culpa sit, cumque neque perspiciatis et.</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -64,7 +74,17 @@
                         </li>     
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПостерNewOrleavsGoldenStar1.jpg" alt="два гравці в баскетбол" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/ПостерNewOrleavsGoldenStar1des.jpg 1x, ./images/портфоліо/ПостерNewOrleavsGoldenStar1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/ПостерNewOrleavsGoldenStar1tab.jpg 1x, ./images/портфоліо/ПостерNewOrleavsGoldenStar1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/ПостерNewOrleavsGoldenStar1mob.jpg 1x, ./images/портфоліо/ПостерNewOrleavsGoldenStar1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/ПостерNewOrleavsGoldenStar1mob.jpg" alt="два гравці в баскетбол" width="450">
+                                    </picture>                                
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus vel illo in vitae.</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -75,7 +95,17 @@
                         </li>                  
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/РесторанSeafood1.jpg" alt="лого ресторану з рибою" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/РесторанSeafood1des.jpg 1x, ./images/портфоліо/РесторанSeafood1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/РесторанSeafood1tab.jpg 1x, ./images/портфоліо/РесторанSeafood1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/РесторанSeafood1mob.jpg 1x, ./images/портфоліо/РесторанSeafood1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/РесторанSeafood1mob.jpg" alt="лого ресторану з рибою" width="450">
+                                    </picture>                                     
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, qui!</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -86,7 +116,17 @@
                         </li>                 
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПроєктPrime1.jpg" alt="навушники" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/ПроєктPrime1des.jpg 1x, ./images/портфоліо/ПроєктPrime1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/ПроєктPrime1tab.jpg 1x, ./images/портфоліо/ПроєктPrime1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/ПроєктPrime1mob.jpg 1x, ./images/портфоліо/ПроєктPrime1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/ПроєктPrime1mob.jpg" alt="навушники" width="450">
+                                    </picture>                                    
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi corrupti numquam necessitatibus sint quibusdam autem quae alias eveniet fugiat sapiente.</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -97,7 +137,17 @@
                         </li>                    
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПроєктBoxes1.jpg" alt="коробки" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/ПроєктBoxes1des.jpg 1x, ./images/портфоліо/ПроєктBoxes1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/ПроєктBoxes1tab.jpg 1x, ./images/портфоліо/ПроєктBoxes1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/ПроєктBoxes1mob.jpg 1x, ./images/портфоліо/ПроєктBoxes1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/ПроєктBoxes1mob.jpg" alt="коробки" width="450">
+                                    </picture>                                    
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet accusantium nihil culpa earum, alias ipsa voluptatibus voluptas eos quam voluptate.</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -108,7 +158,17 @@
                         </li>                    
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/InspirationhasnoBorders1.jpg" alt="екран монітора" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/InspirationhasnoBorders1des.jpg 1x, ./images/портфоліо/InspirationhasnoBorders1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/InspirationhasnoBorders1tab.jpg 1x, ./images/портфоліо/InspirationhasnoBorders1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/InspirationhasnoBorders1mob.jpg 1x, ./images/портфоліо/InspirationhasnoBorders1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/InspirationhasnoBorders1mob.jpg" alt="екран монітора" width="450">
+                                    </picture>                                    
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est dolorem non vero hic eos architecto assumenda ducimus earum officiis minus.</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -119,7 +179,17 @@
                         </li>                   
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ВиданняLimitedEdition1.jpg" alt="розгорнута книжка" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/ВиданняLimitedEdition1des.jpg 1x, ./images/портфоліо/ВиданняLimitedEdition1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/ВиданняLimitedEdition1tab.jpg 1x, ./images/портфоліо/ВиданняLimitedEdition1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/ВиданняLimitedEdition1mob.jpg 1x, ./images/портфоліо/ВиданняLimitedEdition1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/ВиданняLimitedEdition1mob.jpg" alt="розгорнута книжка" width="450">
+                                    </picture>                                    
                                     <p class="portfolio-top-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore hic maiores enim nihil corporis ducimus tenetur provident rem eveniet aspernatur.</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -130,7 +200,17 @@
                         </li>                
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/ПроєктLAB1.jpg" alt="бірка" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/ПроєктLAB1des.jpg 1x, ./images/портфоліо/ПроєктLAB1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/ПроєктLAB1tab.jpg 1x, ./images/портфоліо/ПроєктLAB1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/ПроєктLAB1mob.jpg 1x, ./images/портфоліо/ПроєктLAB1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/ПроєктLAB1mob.jpg" alt="бірка" width="450">
+                                    </picture>                                    
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, asperiores similique ullam eaque magni maiores?</p>
                                 </div>
                                 <div class="border-portfolio">
@@ -141,7 +221,17 @@
                         </li>                    
                         <li class="conteiner-portfolio-li">
                             <a href="#" class="item-portfolio">
-                                <div class="img-block"><img class="pictures-block" src="./images/портфоліо/GrowingBusiness1.jpg" alt="друкує на ноутбуці" width="370px">
+                                <div class="img-block">
+                                    <picture>
+                                        <source srcset="./images/портфоліо/GrowingBusiness1des.jpg 1x, ./images/портфоліо/GrowingBusiness1des-2x.jpg 2x" 
+                                        media="(min-width: 1200px)"/>
+                                        <source srcset="./images/портфоліо/GrowingBusiness1tab.jpg 1x, ./images/портфоліо/GrowingBusiness1tab-2x.jpg 2x" 
+                                        media="(min-width: 768px)"/>
+                                        <source srcset="./images/портфоліо/GrowingBusiness1mob.jpg 1x, ./images/портфоліо/GrowingBusiness1mob-2x.jpg 2x" 
+                                        media="(max-width: 767px)"/>
+                                        <img class="pictures-block"
+                                        src="./images/портфоліо/GrowingBusiness1mob.jpg" alt="друкує на ноутбуці" width="450">
+                                    </picture>
                                     <p class="portfolio-top-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consectetur!</p>
                                 </div>
                                 <div class="border-portfolio">
