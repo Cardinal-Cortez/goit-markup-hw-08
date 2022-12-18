@@ -55,6 +55,7 @@
 .hero__title 
 {
     @include flexCenter();
+    flex-wrap: wrap;
         font-weight: 900;
         font-size: 26px;
         line-height: calc(42 / 26);
@@ -62,13 +63,14 @@
         letter-spacing: 0.06em;
         text-transform: uppercase;
         height: 84px;
-        width: 430px;
+        // width: 430px;
         margin-bottom: 30px;
         margin-left: auto;
         margin-right: auto;
     
     @media screen and (min-width: 1200px) 
     {
+        
         font-size: 44px;
         line-height: calc(60/44);    
         width: 800px;

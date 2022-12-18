@@ -660,6 +660,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.6153846154;
@@ -667,7 +668,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   height: 84px;
-  width: 430px;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
