@@ -1,7 +1,6 @@
 .backdrop
 {
-    @media screen and (min-width: 480px) 
-    {
+    
         position: fixed;
         top: 0;
         left: 0;
@@ -12,13 +11,12 @@
         cubic-bezier(0.4, 0, 0.2, 1),
         visibility 250ms 
         cubic-bezier(0.4, 0, 0.2, 1);
-    }
+    
     
 }
 .modal
 {
-    @media screen and (min-width: 480px) 
-    {
+   
         width: 450px;
         min-height: 609px;
         background: #FFFFFF;
@@ -34,7 +32,7 @@
         margin-right: 15px;
         margin-left: 15px;
         
-    }
+    
     @media screen and (min-width: 1200px) 
     {
         width: 528px;
@@ -180,14 +178,13 @@
     display: flex;
     align-items: center;
     
-    @media screen and (min-width: 480px) 
-    {
+    
         justify-content: flex-start;
         font-size: 12px;
         line-height: calc(14 / 12);
         letter-spacing: 0.03em;
         gap: 7px;
-    }
+    
     @media screen and (min-width: 1200px) 
     { 
         font-size: 14px;
@@ -227,13 +224,12 @@
 .policy-link
     {
         color: #2196F3;
-        @media screen and (min-width: 480px) 
-        {
+        
             font-size: 12px;
             line-height: calc(14 / 12);
             letter-spacing: 0.03em;
             text-decoration-line: underline;
-        }
+        
         @media screen and (min-width: 1200px) 
         {
             font-size: 14px;
