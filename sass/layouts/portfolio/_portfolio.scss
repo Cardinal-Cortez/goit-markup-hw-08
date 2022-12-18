@@ -1,13 +1,12 @@
 .conteiner-menu 
 {
-    @media screen and (min-width: 480px) 
-    {
+    
         margin-bottom: 50px;
         @include flexCenter(flex,normal,null);
         flex-wrap: wrap;
         gap: 8px;
         margin-right: 124px;
-    }
+    
     @media screen and (min-width: 768px) 
     {
         margin-right: 0px;

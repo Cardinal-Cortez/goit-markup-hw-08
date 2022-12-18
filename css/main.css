@@ -1119,15 +1119,13 @@ footer a {
   color: #fff;
 }
 
-@media screen and (min-width: 480px) {
-  .conteiner-menu {
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: normal;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-right: 124px;
-  }
+.conteiner-menu {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: normal;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-right: 124px;
 }
 @media screen and (min-width: 768px) {
   .conteiner-menu {
