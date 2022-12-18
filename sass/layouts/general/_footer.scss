@@ -17,13 +17,12 @@
 }
 .footer-subscribe
 {
-    @media screen and (min-width: 480px) 
-    {
+   
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
-    }
+    
         @media screen and (min-width: 768px) 
     {
         display: flex;
@@ -49,12 +48,11 @@
     }
 .footer-container
 {
-    @media screen and (min-width: 480px) 
-    {
+    
         @include flexCenter(flex,center,baseline);
         flex-wrap: wrap;
         gap: 60px;
-    }
+    
     @media screen and (min-width: 768px) 
     {
         @include flexCenter(flex,center,baseline);
@@ -149,11 +147,10 @@ footer a
 
 .logo__footer
 {
-    @media screen and (min-width: 480px) 
-    {
+    
         @include flexCenter(flex,center,null);
         margin-bottom: 20px; 
-    }
+    
     @media screen and (min-width: 768px) 
     {
         
@@ -167,10 +164,9 @@ footer a
 }
 .list-footer
 {
-    @media screen and (min-width: 480px) 
-    {
+    
         text-align: center;
-    } 
+    
     @media screen and (min-width: 1200px) 
     {
         text-align: start;
@@ -179,8 +175,7 @@ footer a
 
 .doit
 {
-    @media screen and (min-width: 480px) 
-    {
+    
     text-align: center;
     margin-bottom: 20px;
     font-weight: 700;
@@ -206,7 +201,7 @@ footer a
         {
             fill: #ffff;
         }
-    }
+    
     @media screen and (min-width: 1200px) 
     {
         text-align: start;
