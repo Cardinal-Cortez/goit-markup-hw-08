@@ -1167,13 +1167,11 @@ footer a {
   color: var(--color-white);
 }
 
-@media screen and (min-width: 480px) {
-  .conteiner-portfolio {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
+.conteiner-portfolio {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 @media screen and (min-width: 480px) {
   .conteiner-portfolio {
@@ -1189,10 +1187,8 @@ footer a {
   }
 }
 
-@media screen and (min-width: 480px) {
-  .conteiner-portfolio-li {
-    width: 100%;
-  }
+.conteiner-portfolio-li {
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .conteiner-portfolio-li {

@@ -57,12 +57,11 @@
 
 .conteiner-portfolio
 {
-    @media screen and (min-width: 480px) 
-    {
+    
         @include flexCenter(flex,center,null);
         flex-wrap: wrap;
         gap: 30px;
-    }
+    
     @media screen and (min-width: 480px) 
     {
         justify-content: start;
@@ -78,10 +77,9 @@
 }
 .conteiner-portfolio-li
 {
-    @media screen and (min-width: 480px) 
-    {
+    
         width: 100%;
-    }
+    
     @media screen and (min-width: 768px) 
     {
         flex-basis: calc((100% - 30px) / 2);
