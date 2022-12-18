@@ -52,10 +52,11 @@
     padding-left: 200px 452px;
     min-width: 692px;
 }
+
 .hero__title 
 {
-    @include flexCenter();
-    flex-wrap: wrap;
+        @include flexCenter();
+        flex-wrap: wrap;
         font-weight: 900;
         font-size: 26px;
         line-height: calc(42 / 26);
