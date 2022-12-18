@@ -42,10 +42,7 @@
 }
 .nav
 {
-    @media screen and (min-width: 480px) 
-    {
-        display: none;  
-    }
+    display: none; 
     @media screen and (min-width: 768px) 
     {
         @include flexCenter(flex,space-between,null);
@@ -108,10 +105,7 @@
 
 .contacts
 {
-    @media screen and (min-width: 480px) 
-    {
-        display: none; 
-    }
+    display: none; 
     @media screen and (min-width: 768px) 
     {
         margin-top: 21px;
