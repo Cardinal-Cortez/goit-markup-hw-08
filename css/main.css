@@ -71,7 +71,7 @@ img {
   letter-spacing: 0.01em;
 }
 
-.footer-address, .footer-contacts, .feature__subtitle, .policy-link {
+.footer-address, .footer-contacts, .feature__subtitle {
   font-size: 14px;
   line-height: 1.7142857143;
   letter-spacing: 0.03em;
@@ -191,13 +191,6 @@ img {
   .modal {
     width: 528px;
     min-height: 581px;
-    background: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
     padding: 40px;
   }
 }
@@ -314,7 +307,6 @@ img {
   color: #757575;
   display: flex;
   align-items: center;
-  gap: 7px;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 480px) {
@@ -323,7 +315,7 @@ img {
     font-size: 12px;
     line-height: 1.1666666667;
     letter-spacing: 0.03em;
-    gap: 8px;
+    gap: 7px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -331,6 +323,7 @@ img {
     font-size: 14px;
     line-height: 1.7142857143;
     justify-content: center;
+    gap: 8px;
   }
 }
 .policy::before {
@@ -356,6 +349,24 @@ img {
 
 .policy-link {
   color: #2196F3;
+}
+@media screen and (min-width: 480px) {
+  .policy-link {
+    font-size: 12px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .policy-link {
+    font-size: 14px;
+    line-height: 1.7142857143;
+    letter-spacing: 0.03em;
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
 }
 
 .header--conteiner {

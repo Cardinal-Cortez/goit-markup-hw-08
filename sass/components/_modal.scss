@@ -39,15 +39,6 @@
     {
         width: 528px;
         min-height: 581px;
-        background: #FFFFFF;
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
-        0px 1px 1px rgba(0, 0, 0, 0.14), 
-        0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 4px;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%) scale(1);
         padding: 40px;
     }  
          
@@ -185,26 +176,27 @@
 
 .policy
 {
+    color: #757575;
+    display: flex;
+    align-items: center;
+    
     @media screen and (min-width: 480px) 
     {
         justify-content: flex-start;
         font-size: 12px;
         line-height: calc(14 / 12);
         letter-spacing: 0.03em;
-        gap: 8px;
+        gap: 7px;
     }
     @media screen and (min-width: 1200px) 
     { 
         font-size: 14px;
         line-height: calc(24 / 14);
         justify-content: center;
+        gap: 8px;
     }
    
-    color: #757575;
-    display: flex;
-    align-items: center;
     
-    gap: 7px;
     margin-bottom: 30px;
     &::before
     {
@@ -234,6 +226,21 @@
 }
 .policy-link
     {
-        @extend %policy;
         color: #2196F3;
+        @media screen and (min-width: 480px) 
+        {
+            font-size: 12px;
+            line-height: calc(14 / 12);
+            letter-spacing: 0.03em;
+            text-decoration-line: underline;
+        }
+        @media screen and (min-width: 1200px) 
+        {
+            font-size: 14px;
+            line-height: calc(24 / 14);
+            letter-spacing: 0.03em;
+            text-decoration-line: underline;
+        }
+       
+        
     }
