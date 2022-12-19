@@ -45,6 +45,11 @@
         background-color: transparent;
         outline: transparent;
         color: rgba(255, 255, 255, 0.6);
+        
+        @media screen and (min-width: 768px) 
+    {
+        width: 450px;
+    }
     }
 .footer-container
 {
@@ -56,12 +61,14 @@
     @media screen and (min-width: 768px) 
     {
         @include flexCenter(flex,center,baseline);
-        flex-wrap: wrap;
     }
     @media screen and (min-width: 1200px) 
     {
-        @include flexCenter(flex,null,baseline);
+        display: flex;
         gap: 70px;
+        align-items: baseline;
+        justify-content: space-between;
+    
     }
 }
 footer a
@@ -226,4 +233,12 @@ footer a
 .footer__studio
 {
     color: #fff;
+}
+.just
+{
+    @media screen and (min-width: 1200px) 
+    {
+        margin-right: auto;
+    }   
+    
 }
