@@ -947,6 +947,7 @@ img {
 }
 
 .footer-input {
+  width: 450px;
   height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -955,11 +956,6 @@ img {
   background-color: transparent;
   outline: transparent;
   color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 768px) {
-  .footer-input {
-    width: 450px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .footer-input {
